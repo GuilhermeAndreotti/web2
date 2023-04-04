@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <title>Intranet</title>
+    </head>
+    <body>
+        <h2>Olá amigao! {{nome}}</h2>
+
+        <form method="post" action="/salvanome">
+            <h3>Editar nome do usuário: </h3>
+            <input type="text" name="editadonome" value="{{nome}}"> <br>
+            <input type="submit" value="Enviar">
+        </form>
+
+        <form action="/logout">
+            <input type="submit" value="Logout">
+        </form>
+
+    </body>
+</html>
